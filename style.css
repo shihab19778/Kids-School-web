@@ -28,6 +28,22 @@ body {
     font-weight: bold;
     color: #000;
 }
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: background-color 0.3s ease;
+}
 
 .nav-links {
     display: flex;
@@ -55,7 +71,7 @@ body {
     color: #f39c12;
 }
 #About{
-    color: rgb(129, 131, 130);
+    color: rgb(142, 3, 147);
 }
 #Facilities{
     color: rgb(2, 89, 15);
@@ -71,8 +87,46 @@ body {
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-}
+    width: 07%;
+    text-align: center;
+} 
 
 .contact-btn:hover {
     background-color: #e67e22;
+}
+/* Media Query for Phones */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+    .contact-btn{
+        display: none;
+    }
+    .menu-icon {
+        display: flex; /* Show hamburger icon */
+    }
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
 }
