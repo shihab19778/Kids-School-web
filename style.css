@@ -54,12 +54,20 @@ body {
 .nav-links .active {
     color: #f39c12;
 }
-
+#About{
+    color: rgb(129, 131, 130);
+}
+#Facilities{
+    color: rgb(2, 89, 15);
+}
+#Admission{
+    color: rgb(90, 52, 243);
+}
 .contact-btn {
     text-decoration: none;
     background-color: #f39c12;
     color: #fff;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
