@@ -1,57 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids School</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-   
     <link rel="stylesheet" href="style.css">
+    <title>Kids-School</title>
 </head>
+
 <body>
-    <nav class="up-sec">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assests/logo.png" alt="School Logo">
-                <span>SCHOOL</span>
+    <header class="hero">
+        <nav class="nav-bar display-flex">
+            <div class="nav-title-container display-flex">
+                <div class="nav-logo">
+                    <img src="assests/logo.png" alt="">
+                </div>
+                <h2 class="nav-title quicksand">SCHOOL</h2>
             </div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" id="About">About</a></li>
-                <li><a href="#" id="Facilities">Facilities</a></li>
-                <li><a href="#" id="Admission">Admission</a></li>
+            
+
+            <ul class="quicksand display-flex ul">
+                <li><a class="home" href="">Home</a></li>
+                <li><a class="about" href="">About</a></li>
+                <li><a class="facili" href="">Facilities</a></li>
+                <li><a class="adimission" href="">Adimission</a></li>
             </ul>
-            <a href="#" class="contact-btn">Contact</a>
-        </nav>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="empower">
-                    Empowering <br>
-                    students from small <br> age towards vision  
-                </h1>
-                <p>
-                    With the courage, Confidence, Creativity and Compassion to make 
-                    their Unique Contribution in a Diverse and Dynamic World.
-                </p>
-                <a href="#" class="btn">Enroll Now</a>
+            <button class="nav-btn">Contact</button>
+            <div class="dot-icon">
+                <img src="assests/bars-3 (1).png.crdownload" alt="">
             </div>
-            <div class="hero-image">
-                
-                <img src="assests/hero-kids.png" alt="Superhero Kid">
+        </nav>
+        <div class="news-scroll">
+            <span>Hello. I am Shihab. I am a web developer.I have been working in this sector for 2 years.</span>
+          </div>
+          
+          
+          
+          
+        <div class="banner-section display-flex">
+            <div class="banner-content">
+                <h1 class="banner-title quicksand"><span id="empowe">Empowering</span><br>
+                    students from small age <span id="vision">towards vision</span></h1>
+                <p class="banner-description quicksand">With the courage, Confidence, Creativity and Compassion to make
+                    their Unique Contribution in a Diverse and Dynamic World.</p>
+                <button class="banner-btn quicksand">Enroll Now</button>
+            </div>
+            <div class="banner-image">
+                <img src="assests/hero-kids.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="curriculum-sectiion">
+            <div class="curriculum-title-container">
+                <h1 class="curriculum-title quicksand">Standard Curriculum</h1>
+            </div>
+            <div class="box-container">
+                <div class="box kinder">
+                    <div class="box-image">
+                        <img src="assests/kinder.png" alt="">
+                    </div>
+                    <h1 class="box-title quicksand">Kinder (3-6) Years</h1>
+                    <p class="box-description raleway">Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus
+                        mu sdis parturient</p>
+                    <p class="box-subtitle more-1">Read More</p>
+                </div>
+                <div class="box school">
+                    <div class="box-image">
+                        <img src="assests/elementary.png" alt="">
+                    </div>
+                    <h1 class="box-title quicksand">Elementary School</h1>
+                    <p class="box-description raleway">Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus
+                        mu sdis parturient</p>
+                    <p class="box-subtitle more-2">Read More</p>
+                </div>
+                <div class="box middle">
+                    <div class="box-image">
+                        <img src="assests/middle.png" alt="">
+                    </div>
+                    <h1 class="box-title quicksand">Middle (10-16) Years</h1>
+                    <p class="box-description raleway">Cum sociis natoque penatibus et magnis
+                        dis parturient montes, nascetur ridiculus
+                        mu sdis parturient</p>
+                    <p class="box-subtitle more-3">Read More</p>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div>
+                        <img src="assests/Symbol (1).png" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div><img src="assests/Symbol.png" alt=""></div>
+                </div>
             </div>
         </section>
-    </nav>
-   
+
+        <section class="card-section">
+            <div class="section-contaianer">
+                <div class="card-section-title">
+                    <h1 class="quicksand section-title">Our Stories</h1>
+                </div>
+                <div class="card-contianer display-flex">
+                    <div class="big-card">
+                        <div class="big-card-img">
+                            <img src="assests/story-1.png" alt="">
+                            <div class="big-btn">
+                                <button class="big-card-btn raleway">January 21, 2025</button>
+                            </div>
+                        </div>
+                        <h2 class="big-card-title quicksand">A fun toddler coloring training on
+                            classroom</h2>
+                        <p class="big-card-description raleway">Beautiful branding for changes by Never Now in
+                            Australia.
+                            changes is a platform for open discussion in an inclusive and
+                            collaborative environment, providing the...</p>
+                    </div>
+                    <div class="mini-card-container">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assests/story-2.png" alt="">
+                                <div class="card-button">
+                                    <button class="card-btn raleway">January 21, 2025</button>
+                                </div>
+                            </div>
+                            <h3 class="card-title quicksand">Find out if a school fits the
+                                family’s needs</h3>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assests/story-3.png" alt="">
+                                <div class="card-button">
+                                    <button id="praimary-colord" class="card-btn raleway">January 21, 2025</button>
+                                </div>
+                            </div>
+                            <h3 class="card-title quicksand">Summer math & literacy
+                                centres for kids</h3>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assests/story-4.png" alt="">
+                                <div class="card-button">
+                                    <button class="card-btn raleway">January 21, 2025</button>
+                                </div>
+                            </div>
+                            <h3 class="card-title quicksand">Classroom management
+                                techniques for new tutors</h3>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assests/story-5.png" alt="">
+                                <div class="card-button">
+                                    <button class="card-btn raleway">January 21, 2025</button>
+                                </div>
+                            </div>
+                            <h3 class="card-title quicksand">Conversation rhymes
+                                improve kids listening</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <button class="card-section-btn quicksand">View All</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
