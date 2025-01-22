@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 .news-scroll {
     font-size: 24px; 
-    color: black; 
+    color: rgb(26, 20, 10); 
     white-space: nowrap; 
     overflow: hidden;
     width: 100vw; 
@@ -13,7 +12,7 @@
     border-radius: 8px; /
     padding: 10px; 
     box-sizing: border-box; 
-    background-color: #f9f9f9; 
+    background-color: #d6d4fd; 
     position: relative;
     text-rendering: optimizeLegibility;
     font-weight: bold;
@@ -23,7 +22,7 @@
   .news-scroll span {
     display: inline-block;
     position: relative;
-    animation: scroll-right 15s linear infinite; 
+    animation: scroll-right 25s linear infinite; 
   }
   
   @keyframes scroll-right {
@@ -34,6 +33,15 @@
       transform: translateX(100vw); 
     }
   }
+
+  @media screen and (max-width: 576px){
+    .news-scroll {
+       
+        font-size: 18px;
+    }
+
+  }
+
 /* shared styles */
 .raleway{
     font-family: Raleway;
@@ -409,6 +417,72 @@ footer{
     background-color: #01ACFD;
 }
 
+.footer-container{
+    height: 222px;
+    width: 1400px;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+.social-container, 
+.about-container, 
+.footer-title-container{
+    margin-top: 123px;
+}
+
+.footer-title-container{
+    gap: 10px;
+    margin-bottom: 35.35px;
+}
+
+.footer-title{
+    color: #ffffff;
+    font-size: 2.63rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footer-description{
+    width: 400px;
+    height: 100px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-left: 5px;
+}
+
+.about-title{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.about-container ul{
+    list-style-type: none;
+}
+
+.about-container a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.about-container li{
+    margin-bottom: 20px;
+}
+
+.social-title{
+    color: #ffffff;
+    font-size: 1.625rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.social-icon img{
+    margin-right: 10px;
+}
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
     .ul, 
@@ -442,21 +516,21 @@ footer{
         justify-content: center;
         justify-items: center;
         align-items: center;
+        text-align: center;
     }
 
     .banner-image img{
         width: 90%;
-        margin-left: 18px;
+        margin-left: auto;
     }
 
     .banner-title{
-        width: 358px;
         font-size: 2rem;
+        text-align: center;
     }
 
     .banner-description{
         font-weight: 500;
-        width: 358px;
         font-size: 14px;
     }
 
@@ -535,5 +609,61 @@ footer{
 
     .card-section-btn{
         font-size: 16px;
+    }
+
+    footer{
+        width: 100%;
+        height: 700px;
+    }
+
+    .footer-title-container{
+        margin-top: 65px;
+        margin-left: 20px;
+    }
+ 
+    .about-container{
+        margin-top: 32px;
+        margin-left: 20px;
+    }
+
+    .social-container{
+        margin-top: 32px;
+        margin-left: 20px;
+    }
+
+    .footer-container{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-bottom: 23px;
+        margin: 0;
+    }
+
+    .footer-title{
+        font-weight: 2.23rem;
+    }
+
+    .footer-description{
+        width: 90%;
+        font-size: 16px;
+        height: 80px;
+        margin-left: 20px;
+    }
+
+    .about-title{
+        font-size: 1.27rem;
+        margin-bottom: 27.57px;
+    }
+
+    .about-container a{
+        font-size: 16.96px;
+    }
+
+    .about-container li{
+        margin-bottom: 17.15px;
+    }
+
+    .social-title{
+        font-size: 1.375rem;
     }
 }
