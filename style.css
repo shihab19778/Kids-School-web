@@ -546,6 +546,7 @@ footer{
 
     .curriculum-sectiion{
         width: 100%;
+        background-image: url(assests/bg.png);
     }
 
     .box-container{
